@@ -54,6 +54,17 @@ export default function CampaignBuilderPage() {
       status: "pending" as const,
       estimatedCost,
       createdAt: new Date().toISOString(),
+      videoFormat: "vertical-9x16" as const,
+      stylePreset: "natural" as const,
+      variants: 1,
+      voicePaceOverride: null,
+      voiceEmotionOverride: null,
+      backgroundOverride: null,
+      wardrobeOverride: null,
+      lightingOverride: null,
+      assets: [],
+      totalSpend: estimatedCost,
+      paymentStatus: "unpaid" as const,
     };
     addCampaign(campaign);
     setSubmitted(true);
